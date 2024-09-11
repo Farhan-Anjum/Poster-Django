@@ -9,6 +9,6 @@ A Twitter like Django web-app.
 <h2>Poster-Django Documentation Part-2</h2>
 
 <a href="https://medium.com/@fanjum524/poster-django-documentation-part-2-f6d4b7b4247b" title="Navbar, Forms & Models
-:">:">Navbar, Forms & Models
+:"> Navbar, Forms & Models
 </a>
 
