@@ -12,3 +12,8 @@ A Twitter like Django web-app.
 :"> Navbar, Forms & Models
 </a>
 
+<h2>Poster-Django Documentation Part-3</h2>
+
+<a href="https://medium.com/@fanjum524/poster-django-documentation-part-3-20e16ea3c8a8" title="Views for Tweet Application
+:"> Views for Tweet Application
+</a>
