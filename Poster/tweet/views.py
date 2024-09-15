@@ -13,7 +13,7 @@ def index(request):
 # Displays a list of all tweets, ordered by creation date (most recent first)
 def tweet_list(request):
     tweets = Tweet.objects.all().order_by('-created_at')
-    return render(request, 'tweet_list.html', {'tweet': tweets})
+    return render(request, 'tweet_list.html', {'tweets': tweets})
 
 
 # Handles the creation of a new tweet

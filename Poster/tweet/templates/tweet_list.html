@@ -1,0 +1,46 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Tweet
+{% endblock %}
+
+{% block content %}
+
+<div class="container mt-4">
+    <h1 class="text-center mb-4">Welcome to Poster's Django Project</h1>
+
+    <div class="row justify-content-center mb-4">
+        <div class="col-md-6">
+            <a class="btn btn-primary w-100" href="{% url 'tweet_create' %}">Create a Tweet</a>
+        </div>
+    </div>
+
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            {% for tweet in tweets %}
+            <div class="card mb-3">
+                <div class="card-body">
+                    <!-- Tweet content -->
+                    <div>
+                        <h6 class="card-title mb-1">{{ tweet.user.username }} <small class="text-muted">@{{ tweet.user.username }}</small></h6>
+                        <p class="card-text">{{ tweet.text }}</p>
+
+                        <!-- Image for the tweet if exists -->
+                        {% if tweet.photo %}
+                        <img src="{{ tweet.photo.url }}" class="img-fluid rounded" alt="Tweet Image" style="max-height: 300px;">
+                        {% endif %}
+
+                        <!-- Actions for edit and delete -->
+                        <div class="d-flex justify-content-between mt-3">
+                            <a href="{% url 'tweet_edit' tweet.id %}" class="btn btn-outline-primary btn-sm">Edit</a>
+                            <a href="{% url 'tweet_delete' tweet.id %}" class="btn btn-outline-danger btn-sm">Delete</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
+{% endblock %}

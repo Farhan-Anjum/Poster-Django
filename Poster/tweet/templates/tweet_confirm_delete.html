@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Delete Tweet
+{% endblock %}
+
+{% block content %}
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card shadow-sm p-4 bg-light rounded">
+                <h1 class="text-center text-black mb-4">Are You Sure?</h1>
+                <p class="text-center text-dark-gray mb-4">Do you really want to delete this tweet? This process cannot be undone.</p>
+                
+                <form method="post" class="text-center">
+                    {% csrf_token %}
+                    <button class="btn btn-danger me-3 px-4">Delete</button>
+                    <a href="{% url 'tweet_list' %}" class="btn btn-secondary px-4">Cancel</a>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
