@@ -17,3 +17,10 @@ A Twitter like Django web-app.
 <a href="https://medium.com/@fanjum524/poster-django-documentation-part-3-20e16ea3c8a8" title="Views for Tweet Application
 :"> Views for Tweet Application
 </a>
+
+<h2>Poster-Django Documentation Part-4</h2>
+
+<a href="https://medium.com/@fanjum524/poster-django-documentation-part-4-bbe5963f0f1f" title="Jinja Templates & URL Configuration
+:"> Jinja Templates & URL Configuration
+</a>
+
