@@ -32,6 +32,7 @@
 
                         <!-- Actions for edit and delete -->
                         <div class="d-flex justify-content-between mt-3">
+                            {% if tweet.user == user %}
                             <a href="{% url 'tweet_edit' tweet.id %}" class="btn btn-outline-primary btn-sm">Edit</a>
                             <a href="{% url 'tweet_delete' tweet.id %}" class="btn btn-outline-danger btn-sm">Delete</a>
                         </div>
